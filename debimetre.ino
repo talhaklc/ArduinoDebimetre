@@ -27,7 +27,7 @@ void setup()
    Serial.begin(9600);
    attachInterrupt(0, flow, RISING); // Kesmeleri Yükler.
    sei();    // Kesmeleri aktif yapar.
-   currentTime = millis();
+   currentTime = millis(); //Gecikme ayarlama delay ile yapılabilir
    cloopTime = currentTime;
   
   flowRate          = 0.0;
